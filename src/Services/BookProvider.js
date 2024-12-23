@@ -9,7 +9,7 @@ const BookProvider = ({ children }) => {
   // Fetch books from the server
   const fetchBooks = async () => {
     try {
-      const response = await axios.get("http://localhost:8082/books");
+      const response = await axios.get("https://bookmanagerbackend-5aw5.onrender.com/books");
       setBooks(response.data);
     } catch (error) {
       console.error("Error fetching books:", error);
@@ -19,7 +19,7 @@ const BookProvider = ({ children }) => {
   // Add a book
   const addBook = async (book) => {
     try {
-      const response = await axios.post("http://localhost:8082/books", book);
+      const response = await axios.post("https://bookmanagerbackend-5aw5.onrender.com/books", book);
       if (response.status === 200) {
         fetchBooks(); // Refresh the book list after adding
       }
