@@ -2,10 +2,10 @@
 https://book-manager-rouge.vercel.app/
 
 # To setup the project locally :
-1] Copy below url and clone the frontend application locally :
+1] Copy this url and clone the frontend application locally :
 https://github.com/JigneshMahadik/BookManager.git
 
-2] Copy below url and clone the backend service locally :
+2] Copy this url and clone the backend service locally :
 https://github.com/JigneshMahadik/BookManagerBackend.git
 
 3] After above setup, run the below script to run the project :
