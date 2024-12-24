@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const BookContext = createContext();
@@ -6,6 +6,10 @@ export const BookContext = createContext();
 const BookProvider = ({ children }) => {
   const [books, setBooks] = useState([]);
 
+  useEffect(() => {
+    fetchBooks();
+  }, []);
+  
   // Fetch books from the server
   const fetchBooks = async () => {
     try {
